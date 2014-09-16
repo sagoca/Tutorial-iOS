@@ -52,4 +52,9 @@
     [imagen setImage:[UIImage imageNamed:imagenACambiar]];
 
 }
+- (IBAction)cambiarOpacidad:(id)sender {
+    UISlider *slider = (UISlider *) sender;
+    [imagen setAlpha:slider.value];
+    
+}
 @end

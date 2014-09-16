@@ -50,6 +50,13 @@
                                     <action selector="cambiarImagen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xon-R8-ca4"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-pp-04x">
+                                <rect key="frame" x="18" y="341" width="284" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="cambiarOpacidad:" destination="vXZ-lx-hvc" eventType="valueChanged" id="HAa-p0-mzX"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
