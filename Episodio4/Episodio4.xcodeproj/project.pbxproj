@@ -21,6 +21,9 @@
 		4B8E979919C8E612008BE32A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E977B19C8E612008BE32A /* UIKit.framework */; };
 		4B8E97A119C8E612008BE32A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E979F19C8E612008BE32A /* InfoPlist.strings */; };
 		4B8E97A319C8E612008BE32A /* Episodio4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E97A219C8E612008BE32A /* Episodio4Tests.m */; };
+		4B8E97BD19C8E7F4008BE32A /* Batman1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E97BA19C8E7F4008BE32A /* Batman1.jpg */; };
+		4B8E97BE19C8E7F4008BE32A /* Superman_figure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E97BB19C8E7F4008BE32A /* Superman_figure.jpg */; };
+		4B8E97BF19C8E7F4008BE32A /* WonderWomanV5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E97BC19C8E7F4008BE32A /* WonderWomanV5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		4B8E979E19C8E612008BE32A /* Episodio4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Episodio4Tests-Info.plist"; sourceTree = "<group>"; };
 		4B8E97A019C8E612008BE32A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B8E97A219C8E612008BE32A /* Episodio4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Episodio4Tests.m; sourceTree = "<group>"; };
+		4B8E97BA19C8E7F4008BE32A /* Batman1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Batman1.jpg; sourceTree = "<group>"; };
+		4B8E97BB19C8E7F4008BE32A /* Superman_figure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Superman_figure.jpg; sourceTree = "<group>"; };
+		4B8E97BC19C8E7F4008BE32A /* WonderWomanV5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WonderWomanV5.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		4B8E977D19C8E612008BE32A /* Episodio4 */ = {
 			isa = PBXGroup;
 			children = (
+				4B8E97AC19C8E683008BE32A /* Artwork */,
 				4B8E978619C8E612008BE32A /* AppDelegate.h */,
 				4B8E978719C8E612008BE32A /* AppDelegate.m */,
 				4B8E978919C8E612008BE32A /* Main.storyboard */,
@@ -150,6 +157,16 @@
 				4B8E979F19C8E612008BE32A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B8E97AC19C8E683008BE32A /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E97BA19C8E7F4008BE32A /* Batman1.jpg */,
+				4B8E97BB19C8E7F4008BE32A /* Superman_figure.jpg */,
+				4B8E97BC19C8E7F4008BE32A /* WonderWomanV5.jpg */,
+			);
+			path = Artwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +245,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8E97BE19C8E7F4008BE32A /* Superman_figure.jpg in Resources */,
 				4B8E979019C8E612008BE32A /* Images.xcassets in Resources */,
+				4B8E97BF19C8E7F4008BE32A /* WonderWomanV5.jpg in Resources */,
 				4B8E978219C8E612008BE32A /* InfoPlist.strings in Resources */,
+				4B8E97BD19C8E7F4008BE32A /* Batman1.jpg in Resources */,
 				4B8E978B19C8E612008BE32A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
