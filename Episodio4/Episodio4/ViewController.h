@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)cambiarImagen:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *imagen;
 
 @end
