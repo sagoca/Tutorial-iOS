@@ -18,6 +18,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //Crea string vacío
+    NSString *ejemplo1 = @"";
+    NSString *ejemplo2 = [[NSString alloc] init];
+    
+    //Crea String con formato
+    NSString *ejemplo3 = @"Hola";
+    NSString *ejemplo4 = [NSString stringWithFormat:@"Esta es mi cadena de ejemplo %i %@",3, ejemplo3];
+    
+    //Llamar a métodos en un objeto -> escribir nombre de objeto y espacio
+    BOOL *igual = [ejemplo3 isEqualToString:@"Holas"];
 }
 
 - (void)didReceiveMemoryWarning
