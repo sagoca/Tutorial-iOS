@@ -13,6 +13,7 @@
 @property (nonatomic, retain) IBOutlet UITextField *campoTexto;
 @property (nonatomic, retain) IBOutlet UIButton *boton;
 @property (nonatomic, retain) IBOutlet UILabel *etiqueta;
+@property (weak, nonatomic) IBOutlet UILabel *segundaEtiqueta;
 
 - (IBAction)pulsarBoton:(id)sender;
 

@@ -16,6 +16,8 @@
 
 @synthesize campoTexto, boton, etiqueta; //Para no tener que declarar getters y setters
 
+@synthesize segundaEtiqueta;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +32,7 @@
 
 - (IBAction)pulsarBoton:(id)sender{
     [etiqueta setText:campoTexto.text];
+    [segundaEtiqueta setText:campoTexto.text];
 }
 
 @end

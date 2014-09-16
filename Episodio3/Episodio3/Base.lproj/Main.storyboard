@@ -39,6 +39,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segunda label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBx-Eh-p8i">
+                                <rect key="frame" x="20" y="184" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -46,6 +52,7 @@
                         <outlet property="boton" destination="RbO-jP-obz" id="Cxh-xG-PVn"/>
                         <outlet property="campoTexto" destination="JtE-fC-tO8" id="Gt0-Qp-587"/>
                         <outlet property="etiqueta" destination="MjV-8T-Dch" id="pUJ-3E-vjT"/>
+                        <outlet property="segundaEtiqueta" destination="BBx-Eh-p8i" id="g9f-Nj-6vC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
