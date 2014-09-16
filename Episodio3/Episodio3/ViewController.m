@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize campoTexto, boton, etiqueta; //Para no tener que declarar getters y setters
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pulsarBoton:(id)sender{
+    [etiqueta setText:campoTexto.text];
 }
 
 @end

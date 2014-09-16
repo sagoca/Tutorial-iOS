@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UITextField *campoTexto;
+@property (nonatomic, retain) IBOutlet UIButton *boton;
+@property (nonatomic, retain) IBOutlet UILabel *etiqueta;
+
+- (IBAction)pulsarBoton:(id)sender;
+
 @end
