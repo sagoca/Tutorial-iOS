@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CeldaJugadores.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    jugadores = [[NSMutableArray alloc] init];
+    
+    NSDictionary *oliver = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"oliver.jpg",@"Oliver Aton",@"Real Madrid", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    NSDictionary *benji = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"benji.jpg",@"Benji Price",@"FC Barcelona", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    NSDictionary *mark = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"marklenders.jpg",@"Mark Lenders",@"Arsenal", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    NSDictionary *bruce = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"bruceharper.jpg",@"Bruce Harper",@"Recreativo de Huelva", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    NSDictionary *derrick = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"gemelosderrick.jpg",@"Gemelos Derrick",@"Alcorcon", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    NSDictionary *julian = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"julianross.jpg",@"Julian Ross",@"At. de Madrid", nil] forKeys:[NSArray arrayWithObjects:@"imagen",@"nombre",@"equipo", nil]];
+    
+    [jugadores addObject:oliver];
+    [jugadores addObject:benji];
+    [jugadores addObject:mark];
+    [jugadores addObject:bruce];
+    [jugadores addObject:derrick];
+    [jugadores addObject:julian];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,22 +48,20 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 32;
+    return [jugadores count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
+    CeldaJugadores *cell = [tableView dequeueReusableCellWithIdentifier:@"CeldaJugador"]; //El identificador debe ser el mismo que se puso en la celda del storyboard
+    
+    NSDictionary *jugador = [jugadores objectAtIndex:indexPath.row];
     
     //configure the cell...
-    cell.textLabel.text = @"HOLA TABLA";
-    cell.detailTextLabel.text = @"Detalle";
-    cell.imageView.image = [UIImage imageNamed:@"Imagen.png"];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.nombreJugador.text = [jugador objectForKey:@"nombre"];
+    cell.equipoJugador.text = [jugador objectForKey:@"equipo"];
+    cell.imagenJugador.image = [UIImage imageNamed: [jugador objectForKey:@"imagen"]];
+
     return cell;
 }
 
@@ -63,7 +78,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
+    return 60;
 }
 
 @end

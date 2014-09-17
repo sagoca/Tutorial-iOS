@@ -22,6 +22,13 @@
 		4BE30B4C19C9D54E0063EE29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B4A19C9D54E0063EE29 /* InfoPlist.strings */; };
 		4BE30B4E19C9D54E0063EE29 /* Episodio6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE30B4D19C9D54E0063EE29 /* Episodio6Tests.m */; };
 		4BE30B5919C9D6510063EE29 /* Imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5819C9D6510063EE29 /* Imagen.png */; };
+		4BE30B6019C9D7520063EE29 /* marklenders.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5A19C9D7520063EE29 /* marklenders.jpg */; };
+		4BE30B6119C9D7520063EE29 /* benji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5B19C9D7520063EE29 /* benji.jpg */; };
+		4BE30B6219C9D7520063EE29 /* bruceharper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5C19C9D7520063EE29 /* bruceharper.jpg */; };
+		4BE30B6319C9D7520063EE29 /* oliver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5D19C9D7520063EE29 /* oliver.jpg */; };
+		4BE30B6419C9D7520063EE29 /* gemelosderrick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5E19C9D7520063EE29 /* gemelosderrick.jpg */; };
+		4BE30B6519C9D7520063EE29 /* julianross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE30B5F19C9D7520063EE29 /* julianross.jpg */; };
+		4BE30B6819C9DC4F0063EE29 /* CeldaJugadores.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE30B6719C9DC4F0063EE29 /* CeldaJugadores.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,14 @@
 		4BE30B4B19C9D54E0063EE29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BE30B4D19C9D54E0063EE29 /* Episodio6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Episodio6Tests.m; sourceTree = "<group>"; };
 		4BE30B5819C9D6510063EE29 /* Imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Imagen.png; sourceTree = "<group>"; };
+		4BE30B5A19C9D7520063EE29 /* marklenders.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marklenders.jpg; sourceTree = "<group>"; };
+		4BE30B5B19C9D7520063EE29 /* benji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = benji.jpg; sourceTree = "<group>"; };
+		4BE30B5C19C9D7520063EE29 /* bruceharper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bruceharper.jpg; sourceTree = "<group>"; };
+		4BE30B5D19C9D7520063EE29 /* oliver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oliver.jpg; sourceTree = "<group>"; };
+		4BE30B5E19C9D7520063EE29 /* gemelosderrick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gemelosderrick.jpg; sourceTree = "<group>"; };
+		4BE30B5F19C9D7520063EE29 /* julianross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = julianross.jpg; sourceTree = "<group>"; };
+		4BE30B6619C9DC4F0063EE29 /* CeldaJugadores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaJugadores.h; sourceTree = "<group>"; };
+		4BE30B6719C9DC4F0063EE29 /* CeldaJugadores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaJugadores.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,8 @@
 				4BE30B3819C9D54E0063EE29 /* ViewController.m */,
 				4BE30B3A19C9D54E0063EE29 /* Images.xcassets */,
 				4BE30B2919C9D54E0063EE29 /* Supporting Files */,
+				4BE30B6619C9DC4F0063EE29 /* CeldaJugadores.h */,
+				4BE30B6719C9DC4F0063EE29 /* CeldaJugadores.m */,
 			);
 			path = Episodio6;
 			sourceTree = "<group>";
@@ -158,6 +175,12 @@
 		4BE30B5719C9D5A20063EE29 /* Artwork */ = {
 			isa = PBXGroup;
 			children = (
+				4BE30B5A19C9D7520063EE29 /* marklenders.jpg */,
+				4BE30B5B19C9D7520063EE29 /* benji.jpg */,
+				4BE30B5C19C9D7520063EE29 /* bruceharper.jpg */,
+				4BE30B5D19C9D7520063EE29 /* oliver.jpg */,
+				4BE30B5E19C9D7520063EE29 /* gemelosderrick.jpg */,
+				4BE30B5F19C9D7520063EE29 /* julianross.jpg */,
 				4BE30B5819C9D6510063EE29 /* Imagen.png */,
 			);
 			path = Artwork;
@@ -239,10 +262,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE30B6419C9D7520063EE29 /* gemelosderrick.jpg in Resources */,
+				4BE30B6319C9D7520063EE29 /* oliver.jpg in Resources */,
 				4BE30B3B19C9D54E0063EE29 /* Images.xcassets in Resources */,
 				4BE30B2D19C9D54E0063EE29 /* InfoPlist.strings in Resources */,
 				4BE30B5919C9D6510063EE29 /* Imagen.png in Resources */,
+				4BE30B6119C9D7520063EE29 /* benji.jpg in Resources */,
+				4BE30B6519C9D7520063EE29 /* julianross.jpg in Resources */,
 				4BE30B3619C9D54E0063EE29 /* Main.storyboard in Resources */,
+				4BE30B6019C9D7520063EE29 /* marklenders.jpg in Resources */,
+				4BE30B6219C9D7520063EE29 /* bruceharper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE30B6819C9DC4F0063EE29 /* CeldaJugadores.m in Sources */,
 				4BE30B3919C9D54E0063EE29 /* ViewController.m in Sources */,
 				4BE30B3319C9D54E0063EE29 /* AppDelegate.m in Sources */,
 				4BE30B2F19C9D54E0063EE29 /* main.m in Sources */,

@@ -1,15 +1,15 @@
 //
-//  ViewController.h
+//  CeldaJugadores.m
 //  Episodio6
 //
 //  Created by Santiago Gonzalez Causse on 17/09/14.
 //  Copyright (c) 2014 Santiago Gonzalez Causse. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CeldaJugadores.h"
 
-@interface ViewController : UIViewController{
-    NSMutableArray *jugadores;
-}
+@implementation CeldaJugadores
+
+@synthesize nombreJugador, equipoJugador, imagenJugador;
 
 @end
