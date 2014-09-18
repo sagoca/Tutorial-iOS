@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4774BE19CB2FD40073C9B0 /* JugadoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4774BD19CB2FD40073C9B0 /* JugadoresViewController.m */; };
 		4BE30B2319C9D54E0063EE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE30B2219C9D54E0063EE29 /* Foundation.framework */; };
 		4BE30B2519C9D54E0063EE29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE30B2419C9D54E0063EE29 /* CoreGraphics.framework */; };
 		4BE30B2719C9D54E0063EE29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE30B2619C9D54E0063EE29 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4774BC19CB2FD40073C9B0 /* JugadoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadoresViewController.h; sourceTree = "<group>"; };
+		4B4774BD19CB2FD40073C9B0 /* JugadoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadoresViewController.m; sourceTree = "<group>"; };
 		4BE30B1F19C9D54E0063EE29 /* Episodio6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Episodio6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE30B2219C9D54E0063EE29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BE30B2419C9D54E0063EE29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +142,8 @@
 				4BE30B2919C9D54E0063EE29 /* Supporting Files */,
 				4BE30B6619C9DC4F0063EE29 /* CeldaJugadores.h */,
 				4BE30B6719C9DC4F0063EE29 /* CeldaJugadores.m */,
+				4B4774BC19CB2FD40073C9B0 /* JugadoresViewController.h */,
+				4B4774BD19CB2FD40073C9B0 /* JugadoresViewController.m */,
 			);
 			path = Episodio6;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE30B6819C9DC4F0063EE29 /* CeldaJugadores.m in Sources */,
+				4B4774BE19CB2FD40073C9B0 /* JugadoresViewController.m in Sources */,
 				4BE30B3919C9D54E0063EE29 /* ViewController.m in Sources */,
 				4BE30B3319C9D54E0063EE29 /* AppDelegate.m in Sources */,
 				4BE30B2F19C9D54E0063EE29 /* main.m in Sources */,
@@ -498,6 +504,7 @@
 				4BE30B5319C9D54E0063EE29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BE30B5419C9D54E0063EE29 /* Build configuration list for PBXNativeTarget "Episodio6Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				4BE30B5619C9D54E0063EE29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

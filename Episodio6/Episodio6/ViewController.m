@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CeldaJugadores.h"
+#import "JugadoresViewController.h"
 
 @interface ViewController ()
 
@@ -67,14 +68,12 @@
 
 //Controla qué haces cuando seleccionas una fila
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //Navigation logic may go here. Create and push another view controler.
-    /*
-     DetailViewController *detailViewControler = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle: nil];
-     //...
-     //Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    NSDictionary *jugador = [jugadores objectAtIndex:indexPath.row];
+    JugadoresViewController *jugadoresVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JugadoresViewController"];
+    [self.navigationController pushViewController:jugadoresVC animated:YES];
+    //jugadoresVC.labelNombre.text=[jugador objectForKey:@"nombre"];
+    //jugadoresVC.imagenJugador.image = [UIImage imageNamed:[jugador objectForKey:@"imagen"]];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
