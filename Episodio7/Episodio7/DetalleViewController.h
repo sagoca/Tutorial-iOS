@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetalleViewController.h
 //  Episodio7
 //
 //  Created by Santiago Gonzalez Causse on 18/09/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-- (IBAction)cambiarVista:(id)sender;
+@interface DetalleViewController : UIViewController
+- (IBAction)volver:(id)sender;
 
 @end

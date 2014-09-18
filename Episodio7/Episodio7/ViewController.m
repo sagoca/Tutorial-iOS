@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetalleViewController.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cambiarVista:(id)sender {
+    DetalleViewController *detalle = [self.storyboard instantiateViewControllerWithIdentifier:@"DetalleViewController"];
+    [self.navigationController pushViewController:detalle animated:YES];
+}
 @end
