@@ -14,7 +14,9 @@
 
 @end
 
+
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -70,11 +72,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *jugador = [jugadores objectAtIndex:indexPath.row];
     JugadoresViewController *jugadoresVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JugadoresViewController"];
+    [jugadoresVC setLabelString:[jugador objectForKey:@"nombre"]];
+    [jugadoresVC setImagen1:[UIImage imageNamed:[jugador objectForKey:@"imagen"]]];
     [self.navigationController pushViewController:jugadoresVC animated:YES];
-    //jugadoresVC.labelNombre.text=[jugador objectForKey:@"nombre"];
-    //jugadoresVC.imagenJugador.image = [UIImage imageNamed:[jugador objectForKey:@"imagen"]];
     
 }
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60;

@@ -11,5 +11,7 @@
 @interface JugadoresViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imagenJugador;
 @property (weak, nonatomic) IBOutlet UILabel *labelNombre;
+@property (nonatomic, retain) NSString *labelString;
+@property (nonatomic, retain) UIImage *imagen1;
 
 @end

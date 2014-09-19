@@ -15,6 +15,10 @@
 @implementation JugadoresViewController
 @synthesize labelNombre, imagenJugador;
 
+//Hay que crearse estos objetos y modificarlos en el viewController.m aquí se reciben y se asignan a los elementos de la vista en el viewDidLoad.
+//Solución encontrada en el foro de manzanamagica
+@synthesize labelString, imagen1;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    labelNombre.text= [NSString stringWithFormat:@"%@",labelString];
+    [imagenJugador setImage:imagen1];
 }
 
 - (void)didReceiveMemoryWarning

@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="-170" y="26"/>
         </scene>
-        <!--Jugadores View Controller-->
+        <!--Jugadores View Controller - Vista jugador-->
         <scene sceneID="E7R-81-Ya6">
             <objects>
                 <viewController storyboardIdentifier="JugadoresViewController" id="AFa-hx-yd5" customClass="JugadoresViewController" sceneMemberID="viewController">
@@ -109,10 +109,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bCN-yn-dYs"/>
+                    <navigationItem key="navigationItem" title="Vista jugador" id="bCN-yn-dYs"/>
                     <connections>
                         <outlet property="imagenJugador" destination="CbD-cw-REc" id="Ujd-Up-q5g"/>
-                        <outlet property="labelNombre" destination="AZw-F2-c8V" id="hEq-Lp-3fS"/>
+                        <outlet property="labelNombre" destination="AZw-F2-c8V" id="KrR-Av-JS6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SX9-Nh-Vab" userLabel="First Responder" sceneMemberID="firstResponder"/>
