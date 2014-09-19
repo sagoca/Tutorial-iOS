@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VistaNuevaViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"segueVistaRoja"]) {
+        NSLog(@"Está pasando");
+        VistaNuevaViewController *vc = [segue destinationViewController];
+        [vc.view setBackgroundColor:[UIColor blueColor]];
+    }
 }
 
 @end

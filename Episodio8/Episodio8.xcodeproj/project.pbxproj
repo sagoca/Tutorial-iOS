@@ -21,6 +21,7 @@
 		4BAD2C0B19CC6D3F00B6CAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAD2BED19CC6D3E00B6CAB9 /* UIKit.framework */; };
 		4BAD2C1319CC6D3F00B6CAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD2C1119CC6D3F00B6CAB9 /* InfoPlist.strings */; };
 		4BAD2C1519CC6D3F00B6CAB9 /* Episodio8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD2C1419CC6D3F00B6CAB9 /* Episodio8Tests.m */; };
+		4BAD2C2019CC722900B6CAB9 /* VistaNuevaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD2C1F19CC722900B6CAB9 /* VistaNuevaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4BAD2C1019CC6D3F00B6CAB9 /* Episodio8Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Episodio8Tests-Info.plist"; sourceTree = "<group>"; };
 		4BAD2C1219CC6D3F00B6CAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BAD2C1419CC6D3F00B6CAB9 /* Episodio8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Episodio8Tests.m; sourceTree = "<group>"; };
+		4BAD2C1E19CC722900B6CAB9 /* VistaNuevaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VistaNuevaViewController.h; sourceTree = "<group>"; };
+		4BAD2C1F19CC722900B6CAB9 /* VistaNuevaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VistaNuevaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				4BAD2BFF19CC6D3E00B6CAB9 /* ViewController.m */,
 				4BAD2C0119CC6D3E00B6CAB9 /* Images.xcassets */,
 				4BAD2BF019CC6D3E00B6CAB9 /* Supporting Files */,
+				4BAD2C1E19CC722900B6CAB9 /* VistaNuevaViewController.h */,
+				4BAD2C1F19CC722900B6CAB9 /* VistaNuevaViewController.m */,
 			);
 			path = Episodio8;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				4BAD2C0019CC6D3E00B6CAB9 /* ViewController.m in Sources */,
 				4BAD2BFA19CC6D3E00B6CAB9 /* AppDelegate.m in Sources */,
+				4BAD2C2019CC722900B6CAB9 /* VistaNuevaViewController.m in Sources */,
 				4BAD2BF619CC6D3E00B6CAB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
