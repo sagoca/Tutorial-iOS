@@ -22,6 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    mapView.delegate = self;
+    
     MKCoordinateRegion region; //Región en la que se va a centrar el mapa
     MKCoordinateSpan span; //Altitud
     span.latitudeDelta=0.2;
@@ -62,5 +64,28 @@
         default:
             break;
     }
+
+}
+
+-(MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    MKPinAnnotationView *pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"curr"];
+    
+    pinView.animatesDrop = YES; //La anotación aparece cayendo.
+    pinView.pinColor = MKPinAnnotationColorGreen; //cambia el color de la anotación
+    pinView.canShowCallout = YES; //muestra la información de la anotación
+    
+    UIImageView *imagenSup = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"imagen.png"]]; //crea imagen
+    [imagenSup setFrame:CGRectMake(0, 0, 30, 30)]; //cambia el tamaño de la imagen para que quepa en la anotación
+    pinView.leftCalloutAccessoryView = imagenSup; //añade imagen a la anotación
+    
+    UIButton *botonPin = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [botonPin addTarget:self action:@selector(pulsarBoton1:) forControlEvents:UIControlEventTouchUpInside];
+    pinView.rightCalloutAccessoryView = botonPin;
+    
+    return pinView;
+}
+
+-(IBAction)pulsarBoton1:(id)sender{
+    NSLog(@"Botón del PIN pulsado");
 }
 @end

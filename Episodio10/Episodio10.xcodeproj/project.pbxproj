@@ -16,6 +16,7 @@
 		4B9438E519D1BFF200A81D6F /* Episodio10Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9438E419D1BFF200A81D6F /* Episodio10Tests.m */; };
 		4B9438EF19D1C24D00A81D6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9438EE19D1C24D00A81D6F /* MapKit.framework */; };
 		4B9438F119D1C25600A81D6F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9438F019D1C25600A81D6F /* CoreLocation.framework */; };
+		4B9438F519D214B400A81D6F /* Imagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9438F419D214B400A81D6F /* Imagen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4B9438E419D1BFF200A81D6F /* Episodio10Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Episodio10Tests.m; sourceTree = "<group>"; };
 		4B9438EE19D1C24D00A81D6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4B9438F019D1C25600A81D6F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4B9438F419D214B400A81D6F /* Imagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Imagen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		4B9438C719D1BFF200A81D6F /* Episodio10 */ = {
 			isa = PBXGroup;
 			children = (
+				4B9438F319D2149D00A81D6F /* Artwork */,
 				4B9438CC19D1BFF200A81D6F /* AppDelegate.h */,
 				4B9438CD19D1BFF200A81D6F /* AppDelegate.m */,
 				4B9438CF19D1BFF200A81D6F /* ViewController.h */,
@@ -125,6 +128,14 @@
 				4B9438E319D1BFF200A81D6F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B9438F319D2149D00A81D6F /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				4B9438F419D214B400A81D6F /* Imagen.png */,
+			);
+			path = Artwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			files = (
 				4B9438D419D1BFF200A81D6F /* Main.storyboard in Resources */,
 				4B9438D919D1BFF200A81D6F /* LaunchScreen.xib in Resources */,
+				4B9438F519D214B400A81D6F /* Imagen.png in Resources */,
 				4B9438D619D1BFF200A81D6F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +434,7 @@
 				4B9438EA19D1BFF200A81D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B9438EB19D1BFF200A81D6F /* Build configuration list for PBXNativeTarget "Episodio10Tests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				4B9438ED19D1BFF200A81D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
