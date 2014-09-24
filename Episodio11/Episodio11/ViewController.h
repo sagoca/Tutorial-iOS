@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *imagen;
+- (IBAction)pulsarBotonCamara:(id)sender;
+- (IBAction)pulsarBotonSalvar:(id)sender;
 
 
 @end
