@@ -24,4 +24,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pulsarBotonAV:(id)sender {
+    
+    UIAlertView *alerta = [[UIAlertView alloc] init];
+    [alerta setTitle:[NSString stringWithFormat:@"%@", NSLocalizedString(@"tituloAlertView", @"Título de la AlertView")]];
+    [alerta setDelegate:self];
+    [alerta setMessage:[NSString stringWithFormat: @"%@", NSLocalizedString(@"mensajeAlertView", @"Este es el mensaje de la AlertView")]];
+    [alerta addButtonWithTitle:@"Aceptar"];
+    [alerta show];
+}
 @end

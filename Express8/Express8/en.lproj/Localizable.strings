@@ -1,0 +1,9 @@
+/* 
+  File.strings
+  Express8
+
+  Created by Santiago Gonzalez Causse on 29/09/14.
+  Copyright (c) 2014 Santiago Gonzalez Causse. All rights reserved.
+*/
+"mensajeAlertView" = "Hello, Im Muzzy, and I eat clocks";
+"tituloAlertView" = "Confirm";
