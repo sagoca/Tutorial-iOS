@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imagen;
 - (IBAction)pulsarBotonCargarImagen:(id)sender;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 
 @end

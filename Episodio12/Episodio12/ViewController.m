@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize imagen;
+@synthesize imagen, activityIndicator;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,10 +26,19 @@
 }
 
 - (IBAction)pulsarBotonCargarImagen:(id)sender {
+    NSOperationQueue *queue = [NSOperationQueue new];
+    NSInvocationOperation *operacion = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(downloadImage) object:nil];
+    [activityIndicator startAnimating];
+    [queue addOperation:operacion];
+    
+}
+
+- (void) downloadImage{
     NSURL *url = [NSURL URLWithString:@"http://www.newstatesman.com/sites/default/files/images/2014%2B36_Friends_Cast_Poker%281%29.jpg"];
     NSData *data = [NSData dataWithContentsOfURL:url];
     
-    [self.imagen setImage:[UIImage imageWithData:data]];
-    
+    UIImage *img = [UIImage imageWithData:data];
+    [self.imagen performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
+    [activityIndicator stopAnimating];
 }
 @end
