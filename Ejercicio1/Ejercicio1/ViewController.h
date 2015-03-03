@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) NSMutableArray *tareas;
+@property (nonatomic, retain) NSMutableArray *tareasRealizadas;
+@property (nonatomic, retain) NSDictionary *nuevaTarea;
 
 @end
 
