@@ -12,12 +12,44 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    NSString *dataBaseName;
+    NSString *dataBasePath;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    self.dataBasePath = [documentsDirectory stringByAppendingPathComponent:@"peliculasDB.sqlite"];
+    [self cargarBaseDeDatos];
     return YES;
+}
+
+- (void) cargarBaseDeDatos{
+    BOOL exito;
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"peliculasDB.sqlite"];
+    
+    exito = [fileManager fileExistsAtPath:writableDBPath];
+    
+    if(exito) return;
+    
+    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"peliculasDB.sqlite"];
+    exito = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    
+    if(!exito){
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
