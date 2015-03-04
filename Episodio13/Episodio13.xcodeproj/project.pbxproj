@@ -16,6 +16,8 @@
 		4B50A4841AA702B700E14314 /* Episodio13Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A4831AA702B700E14314 /* Episodio13Tests.m */; };
 		4B50A4901AA7044800E14314 /* AgregarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A48F1AA7044800E14314 /* AgregarViewController.m */; };
 		4B50A4921AA7051000E14314 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50A4911AA7051000E14314 /* libsqlite3.dylib */; };
+		4B50A4931AA70A9500E14314 /* peliculasDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4B50A48D1AA702FD00E14314 /* peliculasDB.sqlite */; };
+		4B50A4961AA7171F00E14314 /* ListarPeliculasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A4951AA7171F00E14314 /* ListarPeliculasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		4B50A48E1AA7044800E14314 /* AgregarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarViewController.h; sourceTree = "<group>"; };
 		4B50A48F1AA7044800E14314 /* AgregarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarViewController.m; sourceTree = "<group>"; };
 		4B50A4911AA7051000E14314 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B50A4941AA7171F00E14314 /* ListarPeliculasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListarPeliculasViewController.h; sourceTree = "<group>"; };
+		4B50A4951AA7171F00E14314 /* ListarPeliculasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListarPeliculasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				4B50A4671AA702B700E14314 /* Supporting Files */,
 				4B50A48E1AA7044800E14314 /* AgregarViewController.h */,
 				4B50A48F1AA7044800E14314 /* AgregarViewController.m */,
+				4B50A4941AA7171F00E14314 /* ListarPeliculasViewController.h */,
+				4B50A4951AA7171F00E14314 /* ListarPeliculasViewController.m */,
 			);
 			path = Episodio13;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			files = (
 				4B50A4731AA702B700E14314 /* Main.storyboard in Resources */,
 				4B50A4781AA702B700E14314 /* LaunchScreen.xib in Resources */,
+				4B50A4931AA70A9500E14314 /* peliculasDB.sqlite in Resources */,
 				4B50A4751AA702B700E14314 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +239,7 @@
 			files = (
 				4B50A4701AA702B700E14314 /* ViewController.m in Sources */,
 				4B50A46D1AA702B700E14314 /* AppDelegate.m in Sources */,
+				4B50A4961AA7171F00E14314 /* ListarPeliculasViewController.m in Sources */,
 				4B50A4901AA7044800E14314 /* AgregarViewController.m in Sources */,
 				4B50A46A1AA702B700E14314 /* main.m in Sources */,
 			);
